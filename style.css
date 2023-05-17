@@ -1,0 +1,630 @@
+/* index.html */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* header */
+/* header -> topbar */
+.header .top-bar{
+  padding: 6px 0;
+  background-color: rgb(221, 83, 83);
+}
+.header .top-bar>p{
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: #fcfbfb;
+}
+/* header -> mid-bar */
+.header .mid-bar{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .mid-bar img{
+  max-width: 200px;
+  max-height: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mid-bar>div{
+   padding: 10px;  
+}
+.mid-bar .search{
+  width: 55%;
+}
+.search input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 13px;
+  font-size: 15px;
+}
+
+.mid-bar .logo{
+  padding-right: 50px;
+}
+
+.mid-bar a{
+  font-size: 25px;
+  text-decoration: none;
+  color: #000;
+}
+
+.GioHang>a{
+  display: flex;
+  align-items: center;
+}
+.GioHang a p{
+  font-size: 20px;
+}
+/* hang-hot */
+.col {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 15px;
+}
+.col a{
+  text-decoration: none;
+  color: #000;
+}
+.header .comtainer.text-center{
+  max-width: 100%;
+}
+/* menu chính */
+nav{
+  background-color: darkblue;
+}
+.container-fluid{
+  background-color: darkblue;
+}
+.menu-chinh li{
+  padding: 0 20px;
+}
+nav .menu-chinh li a{
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+.menu-chinh .show{
+  background-color: darkblue;
+}
+.menu-chinh .navbar-toggler a{
+  color: #fff;
+}
+.toggler{
+  display: none;
+  text-align: right;
+}
+/* news */
+.news{
+  display: grid;
+  grid-template-columns: 45% 25% 25%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  'left1 left2 right1'
+  'mid1 mid2 right2';
+  margin: auto;
+}
+.news>div{
+  padding: 10px;
+}
+.news>div>p{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.news img{
+  padding: 10px;
+  width: 100%;
+  max-height: 400px;
+}
+.main{
+  background-color: darkblue;
+  padding: 20px 30px;
+}
+/* hang hot */
+.main h3{
+  padding: 5px 20px;
+  color: #fff;
+}
+.news p{
+  color: #fff;
+}
+.hang-hot{
+  padding: 5px 20px;
+}
+.card{
+  position: relative;
+}
+.img-giay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+.card:hover .img-giay{
+  display: block;
+}
+.col .card{
+  box-shadow: 3px 4px 10px #cdcdcd;
+}
+.card:hover{
+  transform: translateY(-10px);
+  transition: 0.3s linear;
+}
+.card-body .card-title{
+  font-family: arial;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 3px #cdcdcd;
+}
+.khachhang{
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+.khachhang a img{
+  transition: transform .5s ease;
+}
+.khachhang a:hover img{
+  opacity: 0.8;
+  transform: scale(1.125);
+}
+/* best seller */
+.card-body>p>a{
+  color: #c4c41b;  
+  font-weight: bold;
+}
+ button.btnmua_hang{
+  border: none;
+}
+/* img cảm ơn */
+.cam_on{
+  padding: 20px 30px;
+}
+.cam_on>.col{
+  padding: 0;
+}
+.cam_on .col .card a img{
+  transition: 0.5s ease-in-out;
+}
+.cam_on .col .card a:hover img{
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+/* footer */
+.footer>div{
+  padding: 20px;
+}
+.footer>div>h3{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+/* giaybongda.html */
+.list_menu{
+  background-color: darkblue;
+}
+.list_menu .list_giay{
+  list-style-type: none;
+  padding: 10px 25px;
+}
+.list_menu .list_giay li{
+  display: inline-block;
+  color: #fff;
+}
+.list_menu>img{
+  max-width: 100%;
+}
+/*muahang.html*/
+.left-img{
+  padding: 10px;
+}
+.left-img .mini-left-img{
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.main-body-shop{
+  margin: 0;
+}
+.main-body-shop>div{
+  margin: 0;
+}
+.main-body-shop .main-muahang{
+  margin-left: 10px;
+}
+.main-body-shop .cash{
+  margin-top: 0;
+}
+.cash>.cash-product-heading{
+  margin-top: 0;
+}
+.cash-product-heading p{
+  margin-bottom: 0;
+}
+.cash-product-heading .price{
+  font-size: 30px;
+}
+.size p{
+  display: inline-block;
+}
+.size .select-size{
+  display: inline-block;
+}
+.button{
+  padding: 5px;
+}
+.button:focus{
+  background-color: #000;
+  color: #fff;
+}
+.select-number{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.select-number>div{
+  padding: 0 10px;
+  justify-content: center
+}
+#number{
+  width: 70%;
+}
+.select-number input[type="submit"]{
+  padding: 0;
+  float: left;
+  border: none;
+  text-align: center;
+}
+.button-select{
+  display: flex;
+}
+.button-select>.btn{
+  background-color: #cdcdcd;
+  border-radius: 0;
+  padding: 5px;
+}
+.buy button[type="submit"]{
+  border: none;
+  background-color: red;
+}
+.button-select input{
+  padding: 0 5px;
+  text-align: center;
+  border: none;
+}
+input[type="text"]{
+  width: 90%;
+}
+.buy button[type="submit"] a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.buy .add-to-cart{
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.75rem;
+}
+.buy .add-to-cart:hover{
+    background-color: #cdcdcd;
+    color: #000;
+    padding: 20px;
+}
+.buy .add-to-cart:hover a{
+  color: #000;
+}
+.container{
+  text-align: center;
+}
+.thongbao{
+  text-align: start;
+  font-size: 40px;
+  padding: 10px 10px;
+  color: yellowgreen;
+  font-weight: bold;
+}
+.row>p{
+  text-align: start;
+  font-size: 20px;
+}
+.accordion-button{
+  font-weight: bold;
+}
+.info_giay>h6,p{
+  text-align: start;
+}
+.info_giay p{
+  font-size: 15px;
+}
+/* gio_hang.html */
+.main_gio_hang h3{
+  text-align: center;
+}
+.heading_form_gio_hang{
+  background-color: #cdcdcd42;
+}
+.heading_form_gio_hang>p{
+  padding: 0.5rem 1.5rem;
+}
+.main_form_gio_hang{
+  display: flex;
+}
+.main_form_gio_hang>div{
+  padding: 0 10px;
+}
+.left_form_gio_hang img{
+  width: 60px;
+}
+.center_form_gio_hang h6{
+  text-align: start;
+}
+.right_form_gio_hang a{
+  color: #000;
+}
+.thanh_tien_left{
+  float: left;
+  font-size: 20px;
+}
+.thanh_tien_right{
+  float: right;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer_form{
+  clear: both;
+  background-color: #cdcdcd;
+
+}
+.footer_form p{
+  font-weight: bold;
+  padding: 5px 10px;
+  margin: 0;
+}
+.footer_form textarea{
+  padding: 10px 15px;
+  width: 95%;
+  min-height: 80px;
+  resize: none;
+  border: 1px solid #cdcdcd;
+}
+.giam_gia{
+  font-size: 14px;
+  opacity: 0.8;
+}
+.thong_bao{
+  clear: both;
+}
+.info_don_hang{
+  border: 1px solid #ccc;
+    padding: 15px;
+}
+/* Đăng nhập */
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-login{
+  max-width: 400px;
+  background: rgba(0, 0, 0 , 0.8);
+  flex-grow: 1;
+  padding: 30px 30px 40px;
+  box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
+}
+.form-heading{
+  font-size: 25px;
+  color: #f5f5f5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-group{
+  border-bottom: 1px solid #fff;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.form-group i{
+  color: #fff;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+.form-input{
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #f5f5f5;
+  flex-grow: 1;
+}
+.form-input::placeholder{
+  color: #f5f5f5;
+}
+.eye i{
+  padding-right: 0;
+  cursor: pointer;
+}
+
+.form-submit{
+  background: transparent;
+  border: 1px solid #f5f5f5;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  transition: 0.25s ease-in-out;
+  margin-top: 30px;
+}
+::placeholder{
+  color: #cdcdcd;
+}
+.form-submit:hover{
+  border: 1px solid #54a0ff;
+}
+.main_input>div{
+  padding: 0 40px;
+}
+.form-login p{
+  color: #fff;
+  margin-top: 20px;
+}
+/* giới thiệu */
+.main_gioi_thieu{
+  background-color: rgba(124, 85, 105, 0.8);
+  padding: 20px 30px;
+}
+.gioi_thieu{
+  background-image: url(./hinh/background_gioithieu.jpg);
+  padding: 10%;
+}
+.row{
+  margin: 0 !important;
+}
+.center_right{
+  padding: 20px;
+}
+.center_right h1{
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  color: sienna;
+}
+.center_gioi_thieu{
+  background-color: #ccc;
+}
+.center_gioi_thieu img{
+  width: 90%;
+  border: 4px solid #000;
+  border-radius: 5%;
+  transform: translate(10px, -50px);
+}
+.icon_info>a{
+  font-size: 20px;
+  padding: 10px;
+}
+.row_gioi_thieu h1{
+  padding: 20px;
+}
+.icon_info{
+  display: flex;
+  justify-content: center;
+  padding: 10% 0 0 10px;
+}
+.fab{
+  padding: 5px 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  width: 5em;
+}
+.fa-facebook{
+  background-color: blue;
+  color: #fff;
+}
+.fa-google{
+  background-color: #c23616;
+  color: #fff;
+}
+.fa-github{
+  background-color: #000;
+  color: #fff;
+}
+.fa-instagram{
+  color: #EF5350;
+  background-color: #C4C3F1;
+}
+/* responsive */
+/* mobile */
+@media screen and (max-width: 375px) {
+  .news{
+    display: none;
+  }
+  .hang-hot{
+    padding: 0;
+  }
+  .main-muahang .left-img{
+    display: none;
+  }  
+   .main_gioi_thieu .row_gioi_thieu{
+    display: inline !important;
+  }
+  .icon_info>a{
+    padding: 5px;
+  }
+  .fab{
+    width: auto;
+  }
+}
+/* tablet */
+@media screen and (max-width: 768px){
+  .GioHang>a>img{
+    display: none;
+  }
+  .mid-bar .user, .GioHang{
+    display: none;
+  }
+  .mid-bar .logo{
+    width: 100%;
+    padding: 10px;
+  }
+  .header .mid-bar img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+  }
+  .mid-bar .search{
+    width: 100%;
+  }
+  .search input{
+    width: 100%;
+  }
+  .khachhang a img{
+    display: none;
+  }
+  .card-body .card-text .star{
+    display: none;
+  }
+  .news .left1,.mid1,.right1{
+    display: none;
+  }
+  .hang-hot .giay_an{
+    display: none;
+  }
+  .select-number #number
+  {
+    width: 70%;
+    background-color: #353b48;
+    color: #fcfbfb;
+  }
+  .button-select{
+    padding-bottom: 20px;
+  }
+  .cash{
+    padding-left: 50px;
+  }
+  .buy>button.add-to-cart{
+    border-radius: 0.3rem;
+    width: 60%;
+    padding: 15px;
+  }
+  .main_form_gio_hang>.center_form_gio_hang>p{
+    text-align: center;
+  }
+  .left-img{
+    display: none;
+  }
+  .center_gioi_thieu img{
+    border-radius: 50%;
+    width: 85%;
+    height: 400px;
+    transform: none;
+  }
+}
